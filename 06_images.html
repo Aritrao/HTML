@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>images</title>
+    <style>
+        body {
+            background-color: #414141;
+
+        }
+    </style>
+</head>
+<body>
+    <img src="https://images.pexels.com/photos/18696476/pexels-photo-18696476/free-photo-of-a-red-building-with-people-standing-outside.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" width="400px" alt="Architechture">
+     
+    <img src="./html-use.jpg" width="400px" alt="Architechture">
+    <picture>
+        <source media="(min-width: 650px)" srcset="./html-use.jpg" />
+        <source media="(min-width: 460px)" srcset="./html-use.jpg" />
+        <img src="./html-use.jpg" alt="image">
+    </picture>
+
+    <!-- an image map generator -->
+    <img src="man-photo.jpg" usemap="#image-map">
+
+<map name="image-map">
+    <area onclick="one()" alt="" title="" href="" coords="172,92,287,202" shape="rect">
+    <area onclick="two()" alt="" title="" href="" coords="269,350,332,453" shape="rect">
+</map>
+
+<script>
+    function one(){
+        alert("You clicked on one")
+    }
+    function two(){
+        alert("You clicked on two")
+    }
+</script>
+
+</body>
+</html>
